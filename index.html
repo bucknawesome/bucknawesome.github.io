@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Buck n Awesome</title>
+        <meta name="description" content="Something buck n awesome is loading...">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Buck n Awesome">
+        <meta name="author" content="Cole Reuter">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Open Graph (Facebook) -->
+        <meta property="og:url" content="https://www.bucknawesome.com">
+        <meta property="og:title" content="Buck n Awesome">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Something buck n awesome is loading...">
+        
+        <!-- Favicon -->
+        <!--<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">-->
+
+        <!-- Style Sheets -->
+        <link rel="stylesheet" type="text/css" href="animate.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="queries.css">
+        
+        <script src="https://kit.fontawesome.com/2f13524cf9.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="loading()">
+        <div class="text">
+            <h1>Something <i>Buck n Awesome&#8482;</i> is loading<span id="loading"></span></h1>
+            <i class="fa-solid fa-beer-mug-empty beermug"></i>
+        </div>
+        
+        <!-- Javascript -->
+        <script>
+            var i;
+            var txt = "...";
+            var speed = 250;
+            
+            function loading()
+            {
+                i = 0;
+                
+                document.getElementById("loading").innerHTML = "";
+                titleTypeWriter();
+                
+                setTimeout(loading, 1000);
+            }
+            
+            function titleTypeWriter()
+            {
+                  if (i < txt.length)
+                  {
+                        document.getElementById("loading").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(titleTypeWriter, speed);
+                  }
+            }
+        </script>
+    </body>
+</html>

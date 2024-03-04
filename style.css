@@ -1,0 +1,41 @@
+/* ------------------------------------------ */
+/* BASIC SETUP */
+/* ------------------------------------------ */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body
+{
+    height: 100%;
+    width: 100%;
+}
+
+html
+{
+    background-color: #eee;
+    color: #414141;
+    font-family: "Arial";
+    font-size: x;
+    text-rendering: optimizeLegibility;
+    text-align: justify;
+    overflow: auto;
+}
+
+.text
+{
+     padding-top: 100px;
+     text-align: center;
+}
+
+.beermug
+{
+    padding-top: 30px;
+    font-size: 150px;
+}
